@@ -1,0 +1,195 @@
+/*reset para tener un control de la  web*/
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+}
+
+header{
+    height: 10%;
+    display: flex; /* este flex es para colocar  el contenedor del menu [][][][] de esta forma en la pagina web*/
+    padding: 0 50px;
+    justify-content: space-between; /*para que queden separados los elelmentos del header []   []   []   []*/
+    align-items: center; /*esto es para que queden centrados los elemento del header en el contenedor */
+    border: 0.2px solid orange;
+    background: rgb(40, 41, 42);
+}
+
+.titulo1{
+text-transform: uppercase;
+color: antiquewhite;
+padding-right: 0% ;
+margin-left: 0%;
+text-align: left; 
+    
+}
+
+
+
+nav a{
+    color: white;
+    margin: 2px;
+    text-decoration: none;
+    padding: 3px;
+    
+}
+
+nav a:hover{
+    color: rgb(241, 205, 139);
+}
+
+.carrito{
+    color: white;
+}
+
+.carrito:hover{
+    color:rgb(241, 205, 139); ;
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-direction: column;
+        
+       
+    }    
+}
+
+/*reponsive logo */ 
+
+@media(max-width:768px){
+    .logo{
+        width: 25%;
+        padding-top: 10%;
+    }
+}
+
+
+
+
+/*metodo de pago*/
+
+.ti1{
+    text-align: center;
+    margin: 7%;
+    color: rgb(200, 175, 131);
+  
+}
+
+.juntarPago{
+    
+   
+    margin-bottom: 15%;
+    align-items: center;
+    display: flex;
+    padding-top:5% ;
+    padding-bottom:5% ;
+    align-content: space-between;  
+}
+
+.apps{  
+
+    width: 100%;
+    padding-left: 8%;
+}
+
+.bancolomb:hover{
+    background-color: yellow;
+    border-radius: 10%;
+}
+
+.nqi:hover{
+    background-color: aqua;
+    border-radius: 10%;
+}
+
+.textoQR{
+   margin-right: 30%; 
+   text-align: left;
+}
+
+
+@media(max-width:768px){
+    .juntarPago{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20%;
+        padding-top: 10%;
+        
+    }
+
+}
+
+@media(max-width:768px){
+    .bancolom{
+        padding-right: 8%;
+        border: 1px solid navy;
+      
+    }
+}
+
+/*fooder*/
+
+
+
+
+.contenido{
+    display: flex;
+    padding-right: 10%;
+    color: rgb(200, 175, 131);;
+    background: rgb(40, 41, 42);   
+}
+
+.contenido li a{
+    text-decoration: none;
+    color: white;
+    text-align: left;
+  
+}
+
+
+.contenido li a:hover{
+    color: orange;
+}
+
+.foo{
+    
+    width: 100%;
+    text-align: left;
+}
+
+
+.derechos{
+    color: white;
+    background: rgb(40, 41, 42); 
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/*reponsive fooder*/
+
+@media(max-width:768px){
+    .contenido{
+        flex-direction: column;
+        display: flex;
+        padding-left: 35%;
+    }
+    h4{
+        padding-top: 5%;
+    }
+
+}
+
+@media(max-width:768px){
+    .contenido h6{
+        color: rgb(200, 175, 131);
+       
+    }
+}
